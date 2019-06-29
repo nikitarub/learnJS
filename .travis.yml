@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - "11.4.0"
+
+dist: trusty
+
+# This are scripts for future e2e tests
+
+# addons:
+#   chrome: stable
+# before_install:
+#   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
+#   - # start your web application and listen on `localhost`
+#   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+#   - "export DISPLAY=:99.0"
+#   - "sh -e /etc/init.d/xvfb start"
+
+jobs:
+  include:
+    - stage: run lint
+      script:
+        - npm run lint
+    - stage: run unit tests
+      sript:
+        - npm i && npm test
+    # - stage: run e2e tests
+    #   script:
+    #     - npm i && npm test-e2e

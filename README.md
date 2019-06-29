@@ -8,14 +8,23 @@ Repo for learnJS tasks
 * js :-)
 * maybe ts ;-)
 
-### File organisations
-* src
-    * partName
-        * taskName
-* .travis.yml
+### Files organisation
+* src – for source ofk
+    * partNumber_Name – example: **2_Basics**
+        * subpartNumber_Name – example: **5_Variables**
+            * taskName.js – example: **variablesUsage.js**
+            * taskName.test.js – test for your task: **variablesUsage.test.js**
+* .travis.yml – Travis CI config
+* .huskyrc.js – hook for lint and test for pre-commit
 
 ### Linter
 * Google
+    * npm run lint
+    * npm run lint-fix
+
+### Testing
+* Unit test with Jest 
+    * npm run test
 
 ### Issues
 * for each part create issue and suply with:
