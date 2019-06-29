@@ -31,14 +31,18 @@ Repo for learnJS tasks
     * List of tasks
         * short task description (en + ru)
         * link to the task
-    * Milestone 
+    * Milestone if you wish
         * create milestone with same name as your **subbranch**
+
+### Fork 
+* You have to fork these repo before you canwork on it send a PR
+* Ater the work in your repo is done send a PR from branch with name **username**
 
 ### Branches
 * master is for best solutions only
-* branch for user: <username> – use to merge all of your parts
-    * **subbranch** for part: <username>-<partname> (like: nikitarub-basics)
-        * (if not enought) subbbranch for task% <username>-<partName>-<taskNumber> (like: nikitarub-basics-1)
+* branch for user: **username** – use to merge all of your parts
+    * **subbranch** for part: **username**-**partname** (like: nikitarub-basics)
+        * (if not enought) subbbranch for task% **username**-**partName**-**taskNumber** (like: nikitarub-basics-1)
 
 ### Pull Request
 * if you think, that your solution is best – create Pull Request
@@ -48,4 +52,6 @@ Repo for learnJS tasks
     * description:
         * Link to the task
         * Link to your solution
+    * Set Reviewers of issue to @nikitarub
+    * and assign to yourself
 * Your PR will be CI'ed in travis
